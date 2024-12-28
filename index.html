@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>İT Təhlükəsizlik və İnkişaf Portalı</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #2b0101;
+      color: #fff;
+    }
+
+    header {
+      background: #330000;
+      text-align: center;
+      padding: 20px;
+      border-bottom: 3px solid #a60000;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      color: #ff4d4d;
+    }
+
+    #hero {
+      background: #4d0000;
+      text-align: center;
+      padding: 100px 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    #hero a {
+      display: inline-block;
+      background: #ff4d4d;
+      color: #fff;
+      text-decoration: none;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      border-radius: 5px;
+      transition: background 0.3s ease-in-out;
+      margin-top: 20px;
+    }
+
+    #hero a:hover {
+      background: #b30000;
+    }
+
+    section {
+      display: none;
+      padding: 20px;
+      margin: 20px auto;
+      width: 90%;
+      max-width: 800px;
+      background: #3d0000;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+      animation: slideIn 1.5s ease-in-out;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    section h2 {
+      margin-top: 0;
+      color: #ff6666;
+    }
+
+    section p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+
+    a.link {
+      color: #ff4d4d;
+      text-decoration: underline;
+    }
+
+    a.link:hover {
+      color: #b30000;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .interactive {
+      background-color: #550000;
+      padding: 20px;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+
+    .interactive button {
+      background: #ff6666;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background 0.3s ease-in-out;
+    }
+
+    .interactive button:hover {
+      background: #ff4d4d;
+    }
+
+    .resource-link {
+      font-size: 1rem;
+      text-decoration: underline;
+      color: #ff4d4d;
+    }
+  </style>
+  <script>
+    function showSections() {
+      document.getElementById('hero').style.display = 'none';
+      const sections = document.querySelectorAll('section');
+      sections.forEach(section => section.classList.add('active'));
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>İT Təhlükəsizlik və İnkişaf Portalı</h1>
+  </header>
+
+  <div id="hero">
+    <h2>Kiber Təhlükəsizlik və İnkişaf Bələdçisi</h2>
+    <p>Kiber dünyada təhlükəsiz qalmağın yollarını öyrənin. İT sahəsində peşəkar inkişaf üçün lazım olan resurslara sahib olun.</p>
+    <a href="javascript:void(0)" onclick="showSections()">Bölmələri Göstər</a>
+  </div>
+
+  <section id="bruteforce">
+    <h2>Bruteforce Attack</h2>
+    <p>Bruteforce hücumu, istifadəçi adı və şifrəni təxmin etməklə edilən bir hücum növüdür. Hücumçu, bütün mümkün şifrə kombinasiyalarını yoxlayır. Güclü şifrələr və iki faktorlu identifikasiya (2FA) istifadə edərək bu cür hücumlardan qoruna bilərsiniz.</p>
+  </section>
+
+  <section id="cryptography">
+    <h2>Cryptography</h2>
+    <p>Şifrələmə, məlumatları gizlətmək və ya dəyişdirmək üçün istifadə edilən bir üsuldur. Məlumatların qorunması üçün simmetrik və asimmetrik şifrələmə üsulları mövcuddur. Şifrələmə texnologiyaları məlumatın təhlükəsizliyini təmin edir.</p>
+  </section>
+
+  <section id="ddos">
+    <h2>DDoS Attack</h2>
+    <p>DDoS hücumu (Distributed Denial of Service), bir serverə və ya şəbəkəyə çox sayda zərərli sorğu göndərərək onun işləməsini pozmağa yönəlmiş bir hücum növüdür. Bu hücumlardan qorunmaq üçün mənbə şəbəkələri izlənilməli və etibarlı firewall qurulmalıdır.</p>
+  </section>
+
+  <section id="exploits">
+    <h2>Exploits</h2>
+    <p>Exploits, zəifliklərdən faydalanan və sistemlərə müdaxilə edən proqramlardır. Həmçinin bu növ hücumlar məlumat oğurlama və ya sistemin zərərli məqsədlərlə istifadə edilməsinə səbəb ola bilər. Təhlükəsizlik yeniləmələri ilə sistem zəifliklərini bağlamaq vacibdir.</p>
+  </section>
+
+  <section id="firewall">
+    <h2>Firewall</h2>
+    <p>Firewall, şəbəkə üzərindən gələn və ya gedən məlumatları yoxlayaraq təhlükəsizlik təmin edən bir sistemdir. Firewall-lar şəbəkəyə daxil olmaq istəyən zərərli məlumatları bloklayır və yalnız etibarlı əlaqələrə icazə verir.</p>
+  </section>
+
+  <section id="gateway">
+    <h2>Gateway</h2>
+    <p>Gateway, iki şəbəkə arasında məlumat ötürülməsini təmin edən bir nöqtədir. Bu sistem şəbəkə əlaqələrini yönləndirərək şəbəkə təhlükəsizliyini təmin edir.</p>
+  </section>
+
+  <section id="hacktivism">
+    <h2>Hacktivism</h2>
+    <p>Hacktivism, siyasi və sosial məsələlərə diqqət çəkmək məqsədilə internetdəki sistemlərə hücum etməyi əhatə edən bir fəaliyyətdir. Bu cür hücumlar, etirazlar və mesaj vermək üçün istifadə olunur.</p>
+  </section>
+
+  <section id="insider-threats">
+    <h2>Insider Threats</h2>
+    <p>İnsider təhlükələri, təşkilatın daxilindən gələn təhlükələrdir. İşçilər, təchizatçılar və digər daxili istifadəçilər, məlumatları sızdıraraq və ya sistemləri pozaraq təhlükə yarada bilər. Bu cür hücumlardan qorunmaq üçün təlimlər və etibarlı istifadəçi siyasətləri tələb olunur.</p>
+  </section>
+
+  <section id="js-vulnerabilities">
+    <h2>JavaScript Vulnerabilities</h2>
+    <p>JavaScript zəiflikləri, veb tətbiqlərində təhlükəsizlik problemləri yarada biləcək kod səhvləridir. Bu zəifliklər istifadəçilərin məlumatlarını oğurlamaq və ya sistemə zərər vermək məqsədilə istifadə edilə bilər.</p>
+  </section>
+
+  <section id="keylogger">
+    <h2>Keylogger</h2>
+    <p>Keylogger, istifadəçinin klaviatura ilə yazdığı hər şeyi qeyd edən zərərli proqramdır. Keylogger-lar şəxsi məlumatları oğurlamaq məqsədilə istifadə olunur.</p>
+  </section>
+
+  <section id="lateral-movement">
+    <h2>Lateral Movement</h2>
+    <p>Lateral movement, hücumçunun bir şəbəkədə müxtəlif sistemlərə keçid etməsi ilə əlaqəli bir taktika növüdür. Bu, geniş miqyaslı hücumlar və məlumat oğurluğu üçün istifadə edilə bilər.</p>
+  </section>
+
+  <section id="malware">
+    <h2>Malware</h2>
+    <p>Malware, kompüterlərə və ya cihazlara zərər vermək məqsədilə yaradılmış zərərli proqramlardır. Bunlar viruslardan tutmuş Trojana qədər müxtəlif növləri əhatə edir.</p>
+  </section>
+
+  <section id="network-sniffing">
+    <h2>Network Sniffing</h2>
+    <p>Network sniffing, şəbəkə üzərindən məlumatların izlənməsi və toplanması prosesidir. Bu cür hücumlar, şəbəkə üzərindəki məlumatları oğurlamaq və ya analiz etmək məqsədilə həyata keçirilir.</p>
+  </section>
+
+  <section id="osint">
+    <h2>OSINT (Open Source Intelligence)</h2>
+    <p>OSINT, açıq mənbələrdən toplanan məlumatların istifadə edilməsi ilə əlaqəli bir informasiya toplama metodudur. Bu məlumatlar müxtəlif analizlər üçün istifadə edilə bilər.</p>
+  </section>
+
+  <section id="qr-code-hacking">
+    <h2>QR Code Hacking</h2>
+    <p>QR kodları, məlumatları sürətli şəkildə paylaşmaq üçün istifadə edilir. Lakin, zərərli proqramlar və ya phishing hücumları üçün QR kodlarından istifadə etmək mümkündür. Təhlükəsiz kodları yoxlamaq üçün yalnız etibarlı mənbələrdən istifadə edin.</p>
+  </section>
+
+  <section id="ransomware">
+    <h2>Ransomware</h2>
+    <p>Ransomware, istifadəçilərin məlumatlarını şifrələyərək onlardan pul tələb edən zərərli proqramlardır. Bu cür hücumlardan qorunmaq üçün məlumatların yedeklənməsi və etibarlı antiviruslardan istifadə etmək vacibdir.</p>
+  </section>
+
+  <section id="social-engineering">
+    <h2>Social Engineering</h2>
+    <p>Social engineering, insanları aldatmaq və ya manipulyasiya edərək məlumat əldə etmək məqsədilə istifadə olunan bir taktika növüdür. Bu cür hücumlardan qorunmaq üçün güclü şifrələr və diqqətli olmaq lazımdır.</p>
+  </section>
+
+  <section id="url-spoofing">
+    <h2>URL Spoofing</h2>
+    <p>URL spoofing, saxta URL-lərlə istifadəçiləri aldatmaq və onlardan məlumat oğurlamaq məqsədini güdür. URL-ləri diqqətlə yoxlamaq və etibarlı mənbələrdən istifadə etmək vacibdir.</p>
+  </section>
+
+  <section id="virus">
+    <h2>Virus</h2>
+    <p>Viruslar, kompüterlərə zərər vermək və ya məlumatları oğurlamaq məqsədilə yaradılmış zərərli proqramlardır. Antivirus proqramları və təhlükəsiz internet istifadəsi viruslardan qorunmağın əsas yollarıdır.</p>
+  </section>
+
+  <section id="worms">
+    <h2>Worms</h2>
+    <p>Worms, özlərini çoxaldaraq şəbəkələrdə yayılan zərərli proqramlardır. Worms, cihazlar arasında məlumat ötürərək sistemləri zədələyə bilər.</p>
+  </section>
+
+  <section id="xss">
+    <h2>XSS (Cross-Site Scripting)</h2>
+    <p>XSS hücumları, istifadəçilərin veb tətbiqlərindəki zəifliklərdən faydalanaraq zərərli skriptlər yerləşdirməyə yönəlmiş hücumlardır. Bu cür hücumlardan qorunmaq üçün giriş sahələrində məlumat təmizləmə üsulları tətbiq olunmalıdır.</p>
+  </section>
+
+  <section id="yara">
+    <h2>YARA</h2>
+    <p>YARA, zərərli proqramların analizi və aşkarlanması üçün istifadə olunan bir alətdir. YARA şablonları, malware analistlərinə zərərli faylları tapmağa kömək edir.</p>
+  </section>
+
+  <section id="zero-day">
+    <h2>Zero-Day</h2>
+    <p>Zero-day zəiflikləri, təhlükəsizlik tədqiqatçıları tərəfindən aşkar olunmamış və ya düzəldilməmiş zəifliklərdir. Bu zəifliklərdən istifadə edərək həyata keçirilən hücumlar, çox təhlükəli ola bilər.</p>
+  </section>
+
+</body>
+</html>
